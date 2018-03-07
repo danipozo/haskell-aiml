@@ -20,7 +20,7 @@ Salida:
         Hola, soy *
   <pattern/>
   <template >
-        Hola,<star index="1" /> que tal
+        Hola, <star index="1" /> que tal
   <template/>
 <category/>
 
