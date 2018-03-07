@@ -57,9 +57,9 @@ index_ n = ("index", show n)
 name_ n = ("name", n)
 var_ n = ("var", n)
 
-cat = doubleTagBuilder "category"
-pat = doubleTagBuilder "pattern"
-temp = doubleTagBuilder "template"
+cat = doubleTagBuilder "category" []
+pat = doubleTagBuilder "pattern" []
+temp = doubleTagBuilder "template" []
 global n v = doubleTagBuilder "set" [name_ n] [v]
 local n v = doubleTagBuilder "set" [var_ n] [v]
 think = doubleTagBuilder "think" []
@@ -70,7 +70,7 @@ star = simpleTagBuilder "star"
 getglobal n = simpleTagBuilder "set" [name_ n]
 getlocal n = simpleTagBuilder "set" [var_ n]
 
-myTags = cat [] [
-              pat [] ["Hola *"],
-              temp [] ["Hola,", star [index_ 1], " que tal"]
-                ]
+myTags = cat [
+              pat ["Hola *"],
+              temp ["Hola,", star [index_ 1], " que tal"]
+             ]

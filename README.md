@@ -5,10 +5,10 @@ Un pequeño DSL para aliviar el dolor de escribir AIML, en Haskell.
 Ejemplo:
 
 ```haskell
-cat [] [
-        pat [] ["Hola, soy *"],
-        temp [] ["Hola, ", star [index_ 1], " que tal"]
-       ]
+cat [
+        pat  ["Hola, soy *"],
+        temp ["Hola, ", star [index_ 1], " que tal"]
+    ]
 
 ```
 
