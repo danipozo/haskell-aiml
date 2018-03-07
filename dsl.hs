@@ -48,6 +48,11 @@ doubleTagBuilder n a c = DTag DoubleTag { name = n, attributes = a, children = c
 simpleTagBuilder :: String -> [(String,String)] -> Tag
 simpleTagBuilder n a = STag SimpleTag { s_name = n, s_attributes = a }
 
+-- Cabecera del documento
+header = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<aiml version=\"2.0\">\n\n"
+
+renderDocument ts = header ++ (renderTags ts 0)
+
 index_ n = ("index", show n)
 name_ n = ("name", n)
 var_ n = ("var", n)
