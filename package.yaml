@@ -1,0 +1,25 @@
+name:                haskell-aiml
+version:             0.1.0.0
+github:              "danipozo/haskell-aiml"
+license:             MIT
+author:              "Daniel Pozo Escalona"
+maintainer:          "danipozo@correo.ugr.es"
+copyright:           "2018 Daniel Pozo Escalona"
+
+extra-source-files:
+- README.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on Github at <https://github.com/danipozo/haskell-aiml#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+
+library:
+  source-dirs: src
